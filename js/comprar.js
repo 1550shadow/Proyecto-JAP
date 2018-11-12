@@ -20,13 +20,12 @@ document.addEventListener("DOMContentLoaded", function(){
  campoCantidad.addEventListener("change", function() {
      var cantidad = campoCantidad.value; 
      cantidad = parseInt(cantidad);
-
      var subtotal = cantidad * precio;
      parrafoSubtotal.innerHTML = subtotal; 
 
      parrafoTotal.innerHTML = subtotal * 1.22;
  });
- 
+
  envioExpress.addEventListener("change", function(){
      porcentajeEnvio = 0.01;
 
