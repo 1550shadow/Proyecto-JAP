@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
  var precio = 1119;
- var costoEnvio = 0;
  var subtotal= 0;
 
  var campoCantidad = document.getElementById("cantidad");
@@ -20,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
  campoCantidad.addEventListener("change", function() {
      var cantidad = campoCantidad.value; 
      cantidad = parseInt(cantidad);
+
      var subtotal = cantidad * precio;
      parrafoSubtotal.innerHTML = subtotal; 
 
@@ -27,10 +27,9 @@ document.addEventListener("DOMContentLoaded", function(){
  });
 
  envioExpress.addEventListener("change", function(){
-     porcentajeEnvio = 0.01;
-
-     costoEnvio = subtotal * 0,01;
- 
-     parrafoSubtotal = subtotal + costoEnvio; 
+    var envio = subtotal * 0.05;
+    totalEnvio.innerHTML = envio;
  });
+
+
 });
