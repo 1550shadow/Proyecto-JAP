@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>EmulStar: Registro</title>
+  <link rel="stylesheet" href="CSS/style_registro.css">
+ </head>
+ <body>
+   <a href="pagina_principal.html"><img src="IMG/Logo.png" alt="EmulStar" title="EmulStar" class="EmulStar"></a>
+   <nav>
+   <ul class="M">
+    <li><ul class="category">
+     <li class="categorytitle">Categorías</li>
+     <li class="c">Terror</li>
+     <li class="c">Plataformas</li>
+     <li class="c">Shooter</li>
+     <li class="c">Buena historia</li>
+     <li class="c">Puzzles</li>
+     <li class="c">Aventura</li>
+     <li class="c">Online</li>
+     <li class="c">Multiplayer</li>
+     <li class="c">Singleplayer</li>
+     <li class="c">Estrategia</li>
+     <li class="c">RPG</li>
+     <li class="c">Free to play</li>
+     <li class="c"><a href="tags.html">Más...</a></li>
+   </ul></li>
+    <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
+    <li><form action="url-action" method="get" class="search">
+     <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
+     <input class="search" type="search" id="search" name="search">
+   </form></li>
+   </ul>
+   </nav>
+   <h2>Registro</h2>
+   <div class="register">
+   <form action="url-action" method="get">
+     <div>
+       <label for="Nombre">Nombre:</label><br>
+       <input type="text" id="Nombre" name="name" required maxlength="30">
+     </div>
+     <div>
+       <label for="Apellido">Apellido:</label><br>
+       <input type="text" id="Apellido" name="surname" required maxlength="30">
+     </div>
+     <div>
+       <label for="email">Email:</label><br>
+       <input type="email" id="email" name="email" required>
+     </div>
+     <div>
+       <label for="contraseña">Contraseña:</label><br>
+       <input type="password" id="contraseña" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+     </div>
+     <div>
+       <label for="repetir_contraseña">Repetir contraseña:</label><br>
+       <input type="password" id="repetir_contraseña" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+     </div>
+     <div class="button">
+      <input type="submit" value="Guardar">
+      <input type="reset" value="Resetear">
+     </div>
+    </form>
+   </div>
+   <footer><a href="contacto.html">Contacto</a></footer>
+ </body>
+</html>

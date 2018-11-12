@@ -1,0 +1,116 @@
+body {
+  background-image: url(../IMG/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+@font-face {
+  font-family:"Orbitron-black";
+  src:url("fonts/Orbitron/Orbitron-black.ttf");
+}
+
+@font-face {
+  font-family:"Orbitron-regular";
+  src:url("fonts/Orbitron/Orbitron-regular.ttf");
+}
+
+@font-face {
+  font-family:"Orbitron-medium";
+  src:url("fonts/Orbitron/Orbitron-medium.ttf");
+}
+
+@font-face {
+  font-family:"Orbitron-bold";
+  src:url("fonts/Orbitron/Orbitron-bold.ttf");
+}
+
+.EmulStar {
+  position: relative;
+  left:25%;
+  margin: auto;
+  width: 50%;
+}
+
+nav {
+  background-color: rgb(128,128,128,.7);
+  width: 100%;
+}
+
+.M {
+  list-style: none;
+  margin: auto;
+}
+
+.searchimg, .reg {
+  height: 30px;
+}
+
+.regli {
+  float: right;
+}
+
+.search, .c {
+  display: none;
+}
+
+.categorytitle, .ep {
+  font-size: 25px;
+  font-family:"Orbitron-bold";
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  display: inline-block;
+}
+
+div {
+  display: inline-block;
+  margin: 10px;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  font-family: "Orbitron-regular";
+  color: white;
+}
+
+.mother {
+  background-color: rgba(0, 0, 0, .7);
+  margin: 2%;
+  border-style: none;
+  height: 600px;
+}
+
+p {
+  text-align: center;
+  margin-top:  25%;
+}
+
+footer {
+  font-family: "Orbitron-regular";
+  font-size: 30px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .M {
+    text-align: center;
+    padding-right: 18%;
+    padding-left: 18%;
+  }
+  .regli {
+    float: none;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
