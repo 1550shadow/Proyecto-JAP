@@ -9,44 +9,29 @@
  <body>
    <a href="pagina_principal.html" id="EmulStar"><img src="IMG/Logo.png" alt="EmulStar" title="EmulStar" class="EmulStar"></a>
    <nav>
-   <ul class="M">
-    <li><ul class="category">
-     <li class="categorytitle">Categorías</li>
-     <li class="c">Terror</li>
-     <li class="c">Plataformas</li>
-     <li class="c">Shooter</li>
-     <li class="c">Buena historia</li>
-     <li class="c">Puzzles</li>
-     <li class="c">Aventura</li>
-     <li class="c">Online</li>
-     <li class="c">Multiplayer</li>
-     <li class="c">Singleplayer</li>
-     <li class="c">Estrategia</li>
-     <li class="c">RPG</li>
-     <li class="c">Free to play</li>
-     <li class="c"><a href="tags.html">Más...</a></li>
-   </ul></li>
-    <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
-    <li><form action="url-action" method="get" class="search">
-     <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
-     <input class="search" type="search" id="search" name="search">
-   </form></li>
-   <li class="regli"><a href="registro.html"><img class="reg" src="IMG/register.png" alt="Registro" title="Registro"></a></li>
-   </ul>
-   </nav>
+      <ul class="M">
+       <li><a class="categorytitle" href="tags.html">Categorías</a></li>
+       <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
+       <li><form action="url-action" method="get" class="search">
+        <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
+        <input class="search" type="search" id="search" name="search">
+      </form></li>
+      <li class="regli"><a href="registro.html"><img class="reg" src="IMG/register.png" alt="Registro" title="Registro"></a></li>
+      </ul>
+      </nav>
    <h2>Comprar</h2>
    <div class="compra">
    <form action="url-action" method="get">
-    <div>
+    <div class="name">
         <label for="datos">Datos personales:</label>
-        <span class="input"><div><input type="text" id="nombre" name="nombre" maxlength="60" placeholder="Nombre y apellido"></div></span>
+        <span class="input"><div><input type="text" id="nombre" name="nombre" maxlength="60" placeholder="Nombre y apellido" required></div></span>
         <span class="input"><div><input type="email" id="email" name="email" required placeholder="Email"></div></span>
     </div>
-    <div>
+    <div class="name">
       <label for="cantidad">Cantidad:</label>
-      <span class="input"><div><input type="number" id="cantidad" name="cantidad" value="0" max="10" min="1"></div></span>
+      <span class="input"><div><input type="number" id="cantidad" name="cantidad" value="0" max="10" min="1" required></div></span>
     </div>
-    <div>
+    <div class="name">
       <label for="metodo">Método de pago:</label>
       <span class="input"><div><select id="metodo" name="metodo">
         <option>Abitab</option>
@@ -56,22 +41,28 @@
         <option>Prex Card</option>
       </select></div></span>
     </div>
-    <div>
+    <div class="name">
       <label for="tipo">Tipo:</label>
-      <span class="input"><div><input type="radio" id="fisico" name="tipo"><a>Físico</a></div></span>
-      <span class="input"><div><input type="radio" id="digital" name="tipo"><a>Digital</a></div></span>
+      <span class="input"><div><input type="radio" id="fisico" name="tipo" required><a>Físico</a></div></span>
+      <span class="input"><div><input type="radio" id="digital" name="tipo" required><a>Digital</a></div></span>
     </div>
-    <div>
+    <div id="tipo-envio" class="name">
       <label for="tipo-envio">Tipo de envío:</label>
-      <span class="input"><div><input type="radio" id="comun" name="envio"><a>Común</a></div></span>
-      <span class="input"><div><input type="radio" id="express" name="envio"><a>Express</a></div></span>
-      <span class="input"><div><input type="radio" id="premium" name="envio"><a>Premium</a></div></span>
+      <span class="input"><div><input type="radio" id="comun" name="envio" required><a>Común</a></div></span>
+      <span class="input"><div><input type="radio" id="express" name="envio" required><a>Express</a></div></span>
+      <span class="input"><div><input type="radio" id="premium" name="envio" required><a>Premium</a></div></span>
     </div>
     <div class="listaPrecio">
      <p>Precio del juego: $<a id="precioJuego"></a></p>
-     <p>Costo de envío: $<a id="envio"></a></p>
+     <p>Costo de envío: $<a id="total-envio"></a></p>
      <p>Subtotal: $<a id="subtotal"></a></p>
-     <p>Total: $<a id="total"></a></p>
+     <p>Impuestos: $<a id="impuestos"></a></p>
+     <p class="total">Total: $<a id="total"></a></p>
+    </div>
+    <div class="buttons">
+      <div class="comprarbutton"><button class="button" type="submit">Comprar</button></div>
+      <input type="reset" value="Resetear">
+      <a href="pagina_principal.html"><input type="button" value="Volver a la página principal"></a>
     </div>
    </div>
    </form>

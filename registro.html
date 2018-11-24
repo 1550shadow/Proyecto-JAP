@@ -4,34 +4,21 @@
   <meta charset="utf-8">
   <title>EmulStar: Registro</title>
   <link rel="stylesheet" href="CSS/style_registro.css">
+  <script src="js/registro.js"></script>
  </head>
  <body>
    <a href="pagina_principal.html"><img src="IMG/Logo.png" alt="EmulStar" title="EmulStar" class="EmulStar"></a>
    <nav>
-   <ul class="M">
-    <li><ul class="category">
-     <li class="categorytitle">Categorías</li>
-     <li class="c">Terror</li>
-     <li class="c">Plataformas</li>
-     <li class="c">Shooter</li>
-     <li class="c">Buena historia</li>
-     <li class="c">Puzzles</li>
-     <li class="c">Aventura</li>
-     <li class="c">Online</li>
-     <li class="c">Multiplayer</li>
-     <li class="c">Singleplayer</li>
-     <li class="c">Estrategia</li>
-     <li class="c">RPG</li>
-     <li class="c">Free to play</li>
-     <li class="c"><a href="tags.html">Más...</a></li>
-   </ul></li>
-    <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
-    <li><form action="url-action" method="get" class="search">
-     <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
-     <input class="search" type="search" id="search" name="search">
-   </form></li>
-   </ul>
-   </nav>
+      <ul class="M">
+       <li><a class="categorytitle" href="tags.html">Categorías</a></li>
+       <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
+       <li><form action="url-action" method="get" class="search">
+        <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
+        <input class="search" type="search" id="search" name="search">
+      </form></li>
+      <li class="regli"><a href="registro.html"><img class="reg" src="IMG/register.png" alt="Registro" title="Registro"></a></li>
+      </ul>
+    </nav>
    <h2>Registro</h2>
    <div class="register">
    <form action="url-action" method="get">
@@ -48,18 +35,19 @@
        <input type="email" id="email" name="email" required>
      </div>
      <div>
-       <label for="contraseña">Contraseña:</label><br>
-       <input type="password" id="contraseña" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+       <label for="contraseña">Contraseña*:</label><br>
+       <input type="password" id="contrasena" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
      </div>
      <div>
        <label for="repetir_contraseña">Repetir contraseña:</label><br>
-       <input type="password" id="repetir_contraseña" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+       <input type="password" id="repetir_contrasena" name="password" required maxlength="24" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
      </div>
      <div class="button">
       <input type="submit" value="Guardar">
       <input type="reset" value="Resetear">
      </div>
     </form>
+    <p>*La contraseña debe poseer 8 caracteres como mínimo y por lo menos una letra mayúscula, una minúscula y un número</p>
    </div>
    <footer><a href="contacto.html">Contacto</a></footer>
  </body>

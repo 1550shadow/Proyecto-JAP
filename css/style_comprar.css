@@ -89,8 +89,8 @@ h2 {
   color: white;
   margin-top: 0;
   margin-bottom: 25px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   background-color: rgb(0, 0, 0, .7);
   text-align: left;
   padding: 25px;
@@ -104,21 +104,44 @@ h2 {
   width: 150px;
 }
 
-.od {
-  width: 230px;
+.name {
+  margin-bottom: 50px;
 }
 
-.juego {
-  width: 300px;
+#tipo-envio{
+  display: none;
 }
 
-.games {
-  padding: 0;
-  font-size: 0;
+.listaPrecio{
+  text-align: center;
+  background-color: rgb(0, 0, 0, .7);
+  padding: 25px;
+  margin: auto;
+  margin-top: 25px;
+  width: 50%;
 }
 
-.game {
-  width: 300px;
+.total {
+  font-size: 30px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.button {
+  font-family: "Orbitron-bold";
+  font-size: 25px;
+  width: 250px;
+  height: 100px;
+  background-color:  rgb(128,128,128,.7);
+  border-color:  rgb(128,128,128,.7);
+  font-style: none;
+}
+
+.comprarbutton {
+  margin-bottom: 25px; 
 }
 
 footer {
@@ -146,11 +169,6 @@ footer a{
     padding-left: 18%;
   }
 
-  .games{
-    text-align: center;
-    display: list-item;
-  }
-
   .regli {
     float: none;
     padding-left: 25%;
@@ -163,5 +181,13 @@ footer a{
   h2 {
     margin: auto;
     margin-top: 25px;
+    font-size: 35px;
+    width: 200px;
   }
+
+  .compra {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 }

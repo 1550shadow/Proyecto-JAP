@@ -2,37 +2,22 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <title>EmulStar: Nier Autómata</title>
+  <title id="title">EmulStar: Nier Autómata</title>
   <link rel="stylesheet" href="CSS/style_juego.css">
   <script src="js/juego.js"></script>
 </head>
  <body>
    <a href="pagina_principal.html"><img src="IMG/Logo.png" alt="EmulStar" title="EmulStar" class="EmulStar"></a>
    <nav>
-   <ul class="M">
-    <li><ul class="category">
-     <li class="categorytitle">Categorías</li>
-     <li class="c">Terror</li>
-     <li class="c">Plataformas</li>
-     <li class="c">Shooter</li>
-     <li class="c">Buena historia</li>
-     <li class="c">Puzzles</li>
-     <li class="c">Aventura</li>
-     <li class="c">Online</li>
-     <li class="c">Multiplayer</li>
-     <li class="c">Singleplayer</li>
-     <li class="c">Estrategia</li>
-     <li class="c">RPG</li>
-     <li class="c">Free to play</li>
-     <li class="c"><a href="tags.html">Más...</a></li>
-   </ul></li>
-    <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
-    <li><form action="url-action" method="get" class="search">
-     <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
-     <input class="search" type="search" id="search" name="search">
-   </form></li>
-   <li class="regli"><a href="registro.html"><img class="reg" src="IMG/register.png" alt="Registro" title="Registro"></a></li>
-   </ul>
+      <ul class="M">
+       <li><a class="categorytitle" href="tags.html">Categorías</a></li>
+       <li><a class="ep" href="explorar_catalogo.html">Explorar catálogo</a></li>
+       <li><form action="url-action" method="get" class="search">
+        <label for="search"><img class="searchimg" src="IMG/search.png" alt="Buscar" title="Buscar"></label>
+        <input class="search" type="search" id="search" name="search">
+      </form></li>
+      <li class="regli"><a href="registro.html"><img class="reg" src="IMG/register.png" alt="Registro" title="Registro"></a></li>
+      </ul>
    </nav>
    <h2 id="h2"></h2>
    <div class="game">
@@ -73,16 +58,13 @@
       <div><li><div id="RAM"></div></li></div>
       <div><li><div id="DD"></div></li></div>
       <div><li><div id="video"></div></li></div>
-      <div><li><div id="sonido"></div></li></div>
-      <div><li><div id="resolucion"></div></li></div>
-      <div><li><div id="directx"></div></li></div>
       <div><li><div id="otros"></div></li></div>
     </ul>
    </div>
   <div class="cvpp"><span class="cvp">Categorías:</span><span id="categorias"></span><a href="tags.html">más...</a></div>
   <div class="cvpp"><span class="cvp">Valoración de la comunidad:</span><span id="valoracion"></span></div>
   <div class="cvpp"><span class="cvp">Precio:</span><span id="precio"></span></div>
-  <a href="comprar.html?indice=0"><button class="button" type="button">Comprar</button></a>
+  <a id="comprar" href="comprar.html?indice=0"><button class="button" type="button">Comprar</button></a>
   </div>
   <h2>Comentarios</h2>
   <div class="gameTwo">

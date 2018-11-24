@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    var juegos = '[{"nier_automata" : "img/nier_automata_logo.jpg"}, {"csgo":"img/csgo_logo.jpg"}, {"crash":"img/crash_logo.jpg}]'
+    var category = getElementById("category");
+    var c = getElementById("c");
+
+    category.addEventListener("click", function (){
+      c.style.display = "block";
+
+      alert(10);
+    });
 
 });
