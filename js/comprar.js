@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
  precioJuego.innerHTML = precio;
+
 function actualizarCostos(){
     subtotal = cantidad * precio;
     parrafoSubtotal.innerHTML = subtotal.toFixed(2); 
@@ -42,11 +43,6 @@ function actualizarCostos(){
     total.innerHTML = (subtotal * 0.22 + costoEnvio + subtotal).toFixed(2);
 }
 
- tipoFisico.addEventListener("change", function(){
-    if(tipoFisico.checked == true){
-        envio.style.display = "block";
-    }
-});
 document.addEventListener("change", function(){
    if(tipoDigital.checked == true){
        envio.style.display = "none";
@@ -54,6 +50,9 @@ document.addEventListener("change", function(){
        envioExpress.checked = false;
        envioPremium.checked = false;
        totalEnvio.innerHTML = 0;
+   }
+   if(tipoFisico.checked == true){
+       envio.style.display = "block";
    }
 });
 
